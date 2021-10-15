@@ -1,41 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript" async=1>
-
-;(function(p,l,o,w,i,n,g){
-  if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
-  p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
-  };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
-  n.src=w;g.parentNode.insertBefore(n,g)}
-}(
-  window,
-  document,
-  "script",
-  "https://70957a44-ae08-4c02-a88e-0332daad0fa2.app.try-snowplow.com/try.js",
-  "snowplow")
-);
-#70957a44-ae08-4c02-a88e-0332daad0fa2.app.try-snowplow.com
-#283188517708-compute@developer.gserviceaccount.com
-snowplow("newTracker", "try", "harishanth@snowplowdhc.iam.gserviceaccount.com", {
-  appId: "try-snowplow-tracking", // you can specify your own app name here
-  platform: "web",
-  forceSecureTracker: true,
-  sessionCookieTimeout: 3600, // this can be changed
-  contexts: {
-    webPage: true, // this sets a unique id for each page view
-    performanceTiming: true // this captures performance metrics like load times
-  }
-});
-
-// send first heartbeat after 10 seconds, and every 10 seconds thereafter
-snowplow("enableActivityTracking", 10, 10);
-snowplow("enableLinkClickTracking");
-snowplow("trackPageView");
-
-
+    
+    <!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//::1/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
-
+<!-- End Matomo Code -->
 
     <title>My webpage!</title>
     <link rel="stylesheet" href="styles/styles.css" />
