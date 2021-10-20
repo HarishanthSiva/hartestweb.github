@@ -3,9 +3,12 @@
   <head>
     
 <!-- Matomo -->
- <script type="text/javascript" async=1>
+<script>
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.harishanthsiva.github.io"]);
+  _paq.push(["setDomains", ["*.harishanthsiva.github.io/hartestweb.github/index.html"]]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
