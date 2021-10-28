@@ -32,10 +32,31 @@
   <body>
     <h1>Haritest webpage for Matomo UI</h1>
     <h4 id='date'></h4>
-    <a href="https://media.istockphoto.com/vectors/have-a-good-day-greeting-card-vector-id615618472" title="Hariclick1" onclick="_paq.push(['trackEvent', 'TestEvent1', 'Link Click 1', 'Test Event name 1']);"> left </a>
+    
+    <a href="https://media.istockphoto.com/vectors/have-a-good-day-greeting-card-vector-id615618472" title="Hariclick" onclick="_paq.push(['trackEvent', 'TestEvent', 'Link Click', 'Test Event name']);"> Next </a>
    
-    <a href="https://media.istockphoto.com/vectors/have-a-good-day-greeting-card-vector-id615618472" title="Hariclick2" onclick="_paq.push(['trackEvent', 'TestEvent2', 'Link Click 2', 'Test Event name 2']);"> right </a>
+    
+    <div class="buttons">
 
+            <div class="action_btn">
+
+            <button name="submit" class="action_btn submit" type="submit" value="Save" onclick="_paq.push(['trackEvent', 'save_category', 'safe_action', 'save_name']);">Save</button>
+            <button name="submit" class="action_btn cancel" type="submit" value="Cancel" onclick="_paq.push(['trackEvent', 'cancel_category', 'cancel_action', 'cancel_name']);">Cancel</button>
+
+            <p id="saved"></p>
+
+            </div>
+
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+   
     <div class="image-section">
       <div class="section-style">
         <img src="https://source.unsplash.com/random/400x200" alt="" />
