@@ -6,7 +6,9 @@
 <script>
   var _paq = window._paq = window._paq || [];
   
- _paq.push(['setCustomDimension', customDimensionId = 1, customDimensionValue = 'Member']);
+
+  _paq.push(['setCustomDimension', 1, 'dimensionValue1']);
+
   
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(['trackPageView']);
@@ -33,7 +35,7 @@
     <script async src="./javascript/index.js"></script>
   </head>
   <body>
-    <h1>Haritest webpage for Matomo </h1>
+    <h1>Haritest webpage for Matomo visit cd </h1>
     <h4 id='date'></h4>
     
     <a href="https://media.istockphoto.com/vectors/have-a-good-day-greeting-card-vector-id615618472" title="Hariclick" onclick="_paq.push(['trackEvent', 'TestEvent', 'Link Click', 'Test Event name']);"> Next </a>
