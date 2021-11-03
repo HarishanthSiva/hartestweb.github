@@ -6,16 +6,8 @@
 <script>
   var _paq = window._paq = window._paq || [];
   
-  _paq.push(['setCustomVariable',
-    // Index, the number from 1 to 5 where this custom variable name is stored
-    1,
-    // Name, the name of the variable, for example: Gender, VisitorType
-    "Gender",
-    // Value, for example: "Male", "Female" or "new", "engaged", "customer"
-    "Male",
-    // Scope of the custom variable, "visit" means the custom variable applies to the current visit
-    "visit"
-]);
+ _paq.push(['setCustomDimension', customDimensionId = 1, customDimensionValue = 'Member']);
+  
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
@@ -41,7 +33,7 @@
     <script async src="./javascript/index.js"></script>
   </head>
   <body>
-    <h1>Haritest webpage for Matomo User Inuput </h1>
+    <h1>Haritest webpage for Matomo </h1>
     <h4 id='date'></h4>
     
     <a href="https://media.istockphoto.com/vectors/have-a-good-day-greeting-card-vector-id615618472" title="Hariclick" onclick="_paq.push(['trackEvent', 'TestEvent', 'Link Click', 'Test Event name']);"> Next </a>
