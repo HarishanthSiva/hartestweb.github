@@ -5,6 +5,17 @@
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
+  
+  _paq.push(['setCustomVariable',
+    // Index, the number from 1 to 5 where this custom variable name is stored
+    1,
+    // Name, the name of the variable, for example: Gender, VisitorType
+    "Gender",
+    // Value, for example: "Male", "Female" or "new", "engaged", "customer"
+    "Male",
+    // Scope of the custom variable, "visit" means the custom variable applies to the current visit
+    "visit"
+]);
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
