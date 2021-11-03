@@ -7,9 +7,12 @@
   var _paq = window._paq = window._paq || [];
   
 
-  _paq.push(['setCustomDimension', 1, 'dimensionValue1']); /* visit custom Variable */
+  _paq.push(['setCustomDimension', 1, 'dimensionValue1']); /* visit custom Variable  see GUI for the ID*/
   
-  _paq.push(['setCustomDimension', 2, 'Hi Hari']);  /* action custom Variable */
+  _paq.push(['setCustomDimension', 2, 'Test_User Input']);  /* action custom Variable */
+  _paq.push(['setCustomDimension', 3, 'Test_Target_value']);  /* action custom Variable */
+  _paq.push(['setCustomDimension', 4, 'Test_UI_group L1']);  /* action custom Variable */
+   _paq.push(['setCustomDimension', 5, 'Test_UI_group L2']);  /* action custom Variable */
 
   
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -49,7 +52,7 @@
 
             <button name="submit" class="action_btn submit" type="submit" value="Save" onclick="_paq.push(['trackEvent', 'save_category', 'safe_action', 'save_name']);">Save</button>
             <button name="submit" class="action_btn cancel" type="submit" value="Cancel_1" onclick="_paq.push(['trackEvent', 'cancel_category', 'cancel_action', 'cancel_name']);">Cancel</button>
-             <button name="submit" class="action_btn cancel" type="submit" value="Cancel_2" onclick="_paq.push(['setCustomDimension', 2, 'Hi Hari']);">Push_variable</button> 
+             <button name="submit" class="action_btn cancel" type="submit" value="Cancel_2" onclick="_paq.push(['trackEvent', 'cancel_category', 'cancel_action', 'cancel_name_2']);">Cancel_2</button> 
              
             <p id="saved"></p>
 
